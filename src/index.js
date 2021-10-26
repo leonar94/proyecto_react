@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import App from "./App"
+import './estilos.css';
 
 
 // La función render tomar dos parametros (a=elemento que queres mostrar en pantalla y b=el lugar donde lo quiero mostrar)

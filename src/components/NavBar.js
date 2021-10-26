@@ -6,7 +6,7 @@ import CartWidget from './CartWidget'
 
 const NavBar =() => {
     return (
-            <Navbar bg="light" expand="lg">
+            <Navbar id="main-nav"  expand="lg">
             <Container>
                 <Navbar.Brand href="#home">Sabor Waira</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

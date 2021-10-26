@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#main-nav {
+  background-color: turquoise;
+  height: 70px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#carrito {
+  font-size: 35px;
+  padding-right: 30px;
+}
