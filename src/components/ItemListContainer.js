@@ -2,18 +2,19 @@ import ItemCount from "./ItemCount"
 import ItemList from "./ItemList"
 import { peticion } from "./Productos"
 import {useState, useEffect} from 'react'
-
+import { useParams } from "react-router-dom";
 
 
 
 function ItemListContainer  ({name}) {
-    const [productos, setProductos] = useState([])
+  const [productos, setProductos] = useState([])
   const [loading, setLoading] = useState(true)
+  const {id} = useParams()
 
   useEffect (() => {
-
+    console.log(id + "soy yop")
+    
     peticion
-    //.then para sacar lo que esta dentro de la respuesta que es exitoso
       .then(respuesta => {
         setProductos(respuesta)
       })
