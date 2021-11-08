@@ -9,20 +9,15 @@ import { BrowserRouter , Switch , Route  } from 'react-router-dom';
 const App = () => {
     return (
         <BrowserRouter>
+        <NavBar/>
         <Switch>
-                    <NavBar/>
-                <Route path="/" component = {ItemListContainer} exact>
-                    <ItemListContainer name="Jose"/>
-                </Route>
-                <Route path="/categoria/:id" component = {ItemListContainer} exact>
-                    <ItemDetailContainer/>
-                </Route>
+                <Route path="/" component = {ItemListContainer} exact/>
+                <Route path="/ItemDetail/:id" component = {ItemDetailContainer} exact/>
+                <Route path="category/:categoryId" component = {ItemListContainer} exact/>
         </Switch>
         </BrowserRouter>
     )
 }
-
-
 
 
 export default App
