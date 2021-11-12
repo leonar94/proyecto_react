@@ -11,7 +11,7 @@ const Item = ({item}) => {
                 <Card.Text>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus praesentium totam aperiam officiis non at porro reprehenderit cum quis beatae, natus expedita doloribus facilis amet sapiente. Rem nulla placeat hic.
                 </Card.Text>
-                <Button variant="primary">
+                <Button variant="secondary">
                 <Link to={`/itemDetail/${item.id}`}> Detalle</Link>
                 </Button>
             </Card.Body>

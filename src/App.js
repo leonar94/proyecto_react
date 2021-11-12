@@ -13,7 +13,7 @@ const App = () => {
         <Switch>
                 <Route path="/" component = {ItemListContainer} exact/>
                 <Route path="/ItemDetail/:id" component = {ItemDetailContainer} exact/>
-                <Route path="category/:categoryId" component = {ItemListContainer} exact/>
+                <Route path="/category/:categoryId" component = {ItemListContainer} exact/>
         </Switch>
         </BrowserRouter>
     )

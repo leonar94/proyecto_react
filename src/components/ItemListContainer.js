@@ -15,12 +15,13 @@ function ItemListContainer  (param) {
   useEffect (() => {
     setTimeout(() => {
       if (categoryId) {
-        const productos_filtrados = Productos.filter(Producto => Producto.categoryId === categoryId)
-        console.log (productos_filtrados)
+        var productos_filtrados = Productos.filter(Producto => Producto.category === categoryId)
+
         setProductos (productos_filtrados)
       } else {
         setProductos (Productos);
       }
+      console.log (Productos)
     }, 2000)
   }, [categoryId])
 
@@ -29,10 +30,11 @@ if (productos.length === 0) {
 }else {
   return (
     <>
-    <ItemList param = {Productos}/>
+    <ItemList param = {productos}/>
     </>
   )
 }
+
 }
 
   // //   console.log(id + "soy yop")
