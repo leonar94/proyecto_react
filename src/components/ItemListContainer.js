@@ -1,4 +1,3 @@
-// import ItemCount from "./ItemCount"
 import ItemList from "./ItemList"
 // import { peticion } from "./Productos"
 import {useState, useEffect} from 'react'
@@ -11,6 +10,7 @@ function ItemListContainer  (param) {
   const {categoryId} = useParams();
   const [productos, setProductos] = useState([])
   // const [loading, setLoading] = useState(true)
+   
 
   useEffect (() => {
     setTimeout(() => {

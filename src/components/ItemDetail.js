@@ -1,14 +1,17 @@
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
+import ItemCount from './ItemCount'
 
+const onAdd = (count) => {
+    console.log(count)}
 
 const ItemDetail = ({item}) => {
 
 const {id, categoryId,} = item[0];
 
     return (
-      
+        <>
          <Card className='itemDetail' key = {id} id = {id} categoryId = {categoryId} style={{ width: '18rem', display: 'inline-block'}}>
             <Card.Img variant="top" src={item[0].foto} />
             <Card.Body>
@@ -20,9 +23,11 @@ const {id, categoryId,} = item[0];
                 <Link to={'/'}> Home</Link> 
                     </Button>
                     <Card.Title>{item[0].precio}</Card.Title>
+                    <ItemCount stock={7} initial={1} onAdd={onAdd}/>
             </Card.Body>
             </Card>   
-
+            
+            </>        
         // <div key={item.id} className='card w-25 mt.3'>
         // <div className='card-header,'  >{item.nombre}</div>
         // <div className='card-body'>
