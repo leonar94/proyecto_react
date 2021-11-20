@@ -1,5 +1,12 @@
+import { useContext } from "react"
+import { contexto } from "../CartContext"
 
 const CartWidget = () => {
+
+    const {cart}= useContext(contexto)
+    console.log(cart)
+
+
     return (
         <>
         {/* <img className="carrito"

@@ -2,11 +2,21 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
 import ItemCount from './ItemCount'
+import { useContext } from "react"
+import { contexto } from "../CartContext"
 
-const onAdd = (count) => {
-    console.log(count)}
+
 
 const ItemDetail = ({item}) => {
+
+    const {addToCart} = useContext(contexto)
+
+
+    const onAdd = (count) => {
+        console.log(count)
+        addToCart(item, count)
+    }
+
 
 const {id, categoryId,} = item[0];
 
