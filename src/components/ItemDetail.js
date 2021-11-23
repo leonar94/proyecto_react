@@ -3,13 +3,13 @@ import Button from 'react-bootstrap/Button'
 import { Link } from 'react-router-dom'
 import ItemCount from './ItemCount'
 import { useContext } from "react"
-import { contexto } from "../CartContext"
+import { CartContext } from "../CartContext"
 
 
 
 const ItemDetail = ({item}) => {
 
-    const {addToCart} = useContext(contexto)
+    const {addToCart} = useContext(CartContext)
 
 
     const onAdd = (count) => {
